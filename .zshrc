@@ -89,3 +89,15 @@ if [[ `uname` == 'Darwin' ]]; then
   bindkey "^[[H" beginning-of-line
   bindkey "^[[F" end-of-line
 fi
+
+# Add zsh-completions 
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _complete _ignored _correct _approximate
+zstyle :compinstall filename '/Users/alex/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
