@@ -82,6 +82,9 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+if (( $+commands[hub] )) ; then
+  alias git=hub
+fi
 
 # if we're in OSX then we use iTerm so we get Cmd + <- and ->
 # for beginning and end of line.
