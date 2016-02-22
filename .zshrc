@@ -91,6 +91,7 @@ fi
 if [[ `uname` == 'Darwin' ]]; then
   bindkey "^[[H" beginning-of-line
   bindkey "^[[F" end-of-line
+  alias ctags="`brew --prefix`/bin/ctags"
 fi
 
 # Add zsh-completions 
