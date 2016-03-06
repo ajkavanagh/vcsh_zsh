@@ -97,6 +97,15 @@ fi
 # Add zsh-completions 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+# if you do rm *, zsh will give a sanity check
+setopt RM_STAR_WAIT
+
+# Interactive BASH style comments
+setopt interactivecomments
+
+# Let's correct spellings, shall we
+setopt CORRECT
+
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _complete _ignored _correct _approximate
