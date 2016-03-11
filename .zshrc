@@ -56,6 +56,10 @@ plugins=(git, ajk-magic-path)
 export PATH="$PATH:/Users/alex/.gvm/bin:/Users/alex/.rvm/gems/ruby-2.0.0-p195/bin:/Users/alex/.rvm/gems/ruby-2.0.0-p195@global/bin:/Users/alex/.rvm/rubies/ruby-2.0.0-p195/bin:/Users/alex/.rvm/bin:/usr/local/sbin:/Users/alex/Local/bin:/usr/local/bin:/Users/alex/Local/nvm/versions/io.js/v1.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/alex/.gem/ruby/1.8/bin:/Users/alex/.rvm/bin"
 export MANPATH="/usr/local/man:$MANPATH"
 
+if [ -f $HOME/.config/shell-vars/homebrew.sh ]; then
+	source $HOME/.config/shell-vars/homebrew.sh
+fi
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
