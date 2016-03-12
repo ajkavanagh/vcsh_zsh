@@ -96,6 +96,7 @@ if [[ `uname` == 'Darwin' ]]; then
   bindkey "^[[H" beginning-of-line
   bindkey "^[[F" end-of-line
   alias ctags="`brew --prefix`/bin/ctags"
+  export NVIM_TUI_ENABLE_TRUE_COLOR=1
 fi
 
 # Add zsh-completions 
