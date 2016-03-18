@@ -99,6 +99,11 @@ if [[ `uname` == 'Darwin' ]]; then
   export NVIM_TUI_ENABLE_TRUE_COLOR=1
 fi
 
+# we'd like vi keyboard bindings
+bindkey -v
+export KEYTIMEOUT=1
+bindkey '^r' history-incremental-search-backward
+
 # Add zsh-completions 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
