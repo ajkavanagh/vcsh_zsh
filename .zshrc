@@ -124,3 +124,5 @@ zstyle :compinstall filename '/Users/alex/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+export GOPATH=$HOME/Local/gopath
